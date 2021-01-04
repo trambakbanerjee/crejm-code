@@ -15,8 +15,9 @@ Please navigate into each of these folders and consult the readme files in there
 
 
 ## Supporting software and hardware requirements 
+The primary software used is R (>=4.3.0) and the following R packages must be installed for any reproducibility analysis: Rfast, msos, mvtnorm, CVXR, igraph, ggb, GLMMadaptive, lme4, foreach, doParallel, ggplot2, gridExtra, glmmLasso, rpql, readr, tidyverse, lattice, viridisLite, reshape2, scales, Rcpp, RcppArmadillo, RcppProgress.
 
-
+The analyses presented in the paper are based on the following Hardware specifications: Windows 10, 64 bit, with 128GB RAM on an Intel Xeon Gold 6230 CPU. At a minimum, the authors recommend access to 64GB RAM and 10 CPU cores.
 
 
 # Reproducibility workflow
