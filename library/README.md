@@ -11,4 +11,4 @@ This folder holds the main R functions that all other scripts call. There are fo
 
 4. `codelib_postselection.cpp` - these are several `C++ functions` that are called by `rcodelib_stableplayer_postselection.R`.
 
-No action is needed from the user as far as these scripts are concerned.
+For any reproducibility analysis, no action is needed from the user as far as these scripts are concerned.
