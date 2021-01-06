@@ -22,7 +22,11 @@ The analyses presented in the paper are based on the following Hardware specific
 # Reproducibility workflow
 All figures and tables in the paper are reproducible except for figures 1 and 3, and table 3. These two figures are developed in Power Point and do not require any numerical inputs. Table 3 is the data dictionary. Below, we provide the steps that must be followed to reproduce the different tables and figures in the paper.
 
-### Workflow details
+### Figures 2 and 4
+1. Run the script `motivatingfigures.R` inside the folder `processing` to reproduce figures 2 and 4 in the main paper. Please make sure that the `R` working directory is set to `(your folder structure)/crejm-code/data`.
+
+### Table 4
+1. Run the script `datasummary.R` inside the folder `processing` to reproduce table 4 in the main paper. The script writes out two CSV files that holds the summary statistics in table 4. Before running this script, please make sure that the working directory is set to '<your folder structure>/crejm-code/data'.
 
 
 ## Expected run-time
