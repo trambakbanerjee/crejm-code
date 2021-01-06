@@ -26,19 +26,37 @@ The analyses presented in the paper are based on the following Hardware specific
 ### Figures 2 and 4
 1. Run the script `motivatingfigures.R` inside the folder `processing` to reproduce figures 2 and 4 in the main paper. Please make sure that the `R` working directory is set to `(your folder structure)/crejm-code/data`.
 
+The expected runtime is `<10 minutes`.
+
 ### Table 4
 1. Run the script `datasummary.R` inside the folder `processing` to reproduce table 4 in the main paper. The script writes out two CSV files that hold the summary statistics in table 4. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data`.
+
+The expected runtime is `<10 minutes`.
 
 ### Table 1
 This is the table that presents the selected fixed / composite effects and the coefficient estimates under the submodels Login Indicator, Duration of Play
 and Purchase Propensity. The following steps when executed in the order described below reproduce table 1.
 
-1. Run `dataprocessing.R` inside the folder `processing` to output `out.RData` which is a list that holds the processed training and prediction data. Before running this script, please make sure that the working directory is set to '<your folder structure>/crejm-code/data'.
+1. Run `dataprocessing.R` inside the folder `processing` to output `out.RData` which is a list that holds the processed training and prediction data. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data`.
 2. Run `crejm_estimation.R` available inside the folder `selection`. This script writes out a list of initial estimates `init.est.RData`.
 3. Run `crejm_selection.R` available inside the folder `selection`. This script writes out a list of selected fixed / composite effect predictors in `selection.RData`.
 4. To get the coefficient estimates, run `crejm_postselectionestimation.R` available inside the folder `selection`. This script writes out a list `postselection.est.RData` that stores the coefficient estimates, and the estimated covariance matrices of the player and guild specific random effects.  
+
+The expected runtime is `~6 hours`.
   
 ### Figure 5
 1. Figure 5 relies on the output `postselection.est.RData` that is obtained from step (4) above. To reproduce figure 5, run `crejm_randomeffect_network.R` available inside the folder `selection`.
 
-## Expected run-time
+The expected runtime is `< 5 minutes`.
+
+### Table 2
+
+The expected runtime is `~ 1 hour`.
+
+### Figure 6
+
+The expected runtime is `<30 minutes`.
+
+### Figures 7 and 8
+
+The expected runtime is `~ 48 hours`.
