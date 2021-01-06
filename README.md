@@ -5,7 +5,7 @@ We provide the full set of analyses code in this GitHub repository that can be u
 
 There are 3 folders in this repository:
 
-1. data - holds the data files that were used for all the analyses in this paper.
+1. data - holds the data files that were used for all the analyses in this paper. See the [README file](https://github.com/trambakbanerjee/crejm-code/tree/main/data#data).
 2. spcov - . 
 3. library - holds the main R functions. Please see 
 
