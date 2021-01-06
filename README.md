@@ -26,14 +26,16 @@ All figures and tables in the paper are reproducible except for figures 1 and 3,
 1. Run the script `motivatingfigures.R` inside the folder `processing` to reproduce figures 2 and 4 in the main paper. Please make sure that the `R` working directory is set to `(your folder structure)/crejm-code/data`.
 
 ### Table 4
-1. Run the script `datasummary.R` inside the folder `processing` to reproduce table 4 in the main paper. The script writes out two CSV files that holds the summary statistics in table 4. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data`.
+1. Run the script `datasummary.R` inside the folder `processing` to reproduce table 4 in the main paper. The script writes out two CSV files that hold the summary statistics in table 4. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data`.
 
 ### Table 1
 This is the table that presents the selected fixed / composite effects and the coefficient estimates under the submodels Login Indicator, Duration of Play
-and Purchase Propensity. The following steps reproduce table 1.
+and Purchase Propensity. The following steps when executed in the order described below reproduce table 1.
 
-1. Run `dataprocessig.R` inside the folder `processing` to output `out.RData` which is a list that holds the processed training and prediction data. Before running this script, please make sure that the working directory is set to '<your folder structure>/crejm-code/data'.
+1. Run `dataprocessing.R` inside the folder `processing` to output `out.RData` which is a list that holds the processed training and prediction data. Before running this script, please make sure that the working directory is set to '<your folder structure>/crejm-code/data'.
 2. Run `crejm_estimation.R` available inside the folder `selection`. This script writes out a list of initial estimates `init.est.RData`.
+3. Run `crejm_selection.R` available inside the folder `selection`. This script writes out a list of selected fixed / composite effect predictors in `selection.RData`.
+4. To get the coefficient estimates, run `crejm_postselectionestimation.R` available inside the folder `selection`. This script writes out a list 'postselection.est.RData` that stores the coefficient estimates, and the estimated covariance matrices of the player and guild specific random effects.  
 
   
 
