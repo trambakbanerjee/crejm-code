@@ -32,7 +32,9 @@ All figures and tables in the paper are reproducible except for figures 1 and 3,
 This is the table that presents the selected fixed / composite effects and the coefficient estimates under the submodels Login Indicator, Duration of Play
 and Purchase Propensity. The following steps reproduce table 1.
 
-1.
+1. Run `dataprocessig.R` inside the folder `processing` to output `out.RData` which is a list that holds the processed training and prediction data. Before running this script, please make sure that the working directory is set to '<your folder structure>/crejm-code/data'.
+2. Run `crejm_estimation.R` available inside the folder `selection`. This script writes out a list of initial estimates `init.est.RData`.
+
   
 
 
