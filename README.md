@@ -26,7 +26,7 @@ All figures and tables in the paper are reproducible except for figures 1 and 3,
 1. Run the script `motivatingfigures.R` inside the folder `processing` to reproduce figures 2 and 4 in the main paper. Please make sure that the `R` working directory is set to `(your folder structure)/crejm-code/data`.
 
 ### Table 4
-1. Run the script `datasummary.R` inside the folder `processing` to reproduce table 4 in the main paper. The script writes out two CSV files that holds the summary statistics in table 4. Before running this script, please make sure that the working directory is set to '<your folder structure>/crejm-code/data'.
+1. Run the script `datasummary.R` inside the folder `processing` to reproduce table 4 in the main paper. The script writes out two CSV files that holds the summary statistics in table 4. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data`.
 
 ### Table 1
 This is the table that presents the selected fixed / composite effects and the coefficient estimates under the submodels Login Indicator, Duration of Play
