@@ -3,17 +3,13 @@ We provide the full set of analyses code in this GitHub repository that can be u
 
 ## Description
 
-There are 5 folders in this repository:
+There are 3 folders in this repository:
 
 1. data - holds the data files that were used for all the analyses in this paper.
-2. processing - holds R scripts that process the data and generates figures 2, 4 and table 4 in the paper. 
-3. selection - R scripts that reproduce results in table 1 and figure 5 in the paper.
-4. prediction - holds R scripts that reproduce table 2 and figures 6,7 and 8 in the paper.
-5. library - holds the main R functions.
+2. spcov - . 
+3. library - holds the main R functions. Please see 
 
-Please navigate to each of these folders and consult the readme files in there. 
-
-There are three scripts in this folder that do the following:
+Other than these 3 folders, there are xx scripts in this repository. We describe them below:
 
 1. `dataprocessing.R` - use this script to read the raw data files and output `out.RData` which is a list that holds the processed training and prediction data. Before running this script, please make sure that the working directory is set to `(your folder structure)/crejm-code/data`.
 
