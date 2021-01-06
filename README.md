@@ -20,9 +20,9 @@ The analyses presented in the paper are based on the following Hardware specific
 
 
 # Reproducibility workflow
-All figures and tables in the paper are reproducible except for figures 1 and 3, and table 3. These two figures are developed in Power Point and do not require any numerical inputs. Table 3 is the data dictionary.
+All figures and tables in the paper are reproducible except for figures 1 and 3, and table 3. These two figures are developed in Power Point and do not require any numerical inputs. Table 3 is the data dictionary. Below, we provide the steps that must be followed to reproduce the different tables and figures in the paper.
 
-## Workflow details
+### Workflow details
 
 
 ## Expected run-time
