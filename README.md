@@ -64,7 +64,13 @@ Table 2 presents results related to the predictive performance of CREJM and Benc
 
 ### Figure 6
 
-`[ERT < 30 minutes]`
+1. Run `crejm_guildrandeffs.R` to reproduce figure 6. Please make sure that:
+    1. On lines 8 and 9 - the working directory and the path to `selection.RData` (from step 3 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) are properly set.
+    2. On lines 11 and 12 - the appropriate directory for sourcing the R scripts in the folder `library` is set.
+    3. On line 22 - the appropriate directory for reading `postselection.est.RData` (from step 4 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) is set.
+    4. On line 25 - the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) is properly set. 
+  
+ This script uses R packages `foreach` and `doParallel` and expects access to a local cluster of size 10 on line 83. `[ERT < 30 minutes]`    
 
 ### Figures 7 and 8
 
