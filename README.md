@@ -23,7 +23,7 @@ Other than these 3 folders, there are 12 R scripts and an excel file in this rep
 10. `crejm_prediction.R` - reproduces table 2 for CREJM. 
 11. `crejm_guildrandeffs.R` - use this script to reproduce figure 6.
 12. `crejm_guildcorrelations.R` - reproduces figures 7 and 8 in the main paper. 
-13. `crejm_network.xlsx` - stores the player specific random effect covariance matrix that is an input to `ccrejm_randomeffect_network.R` for generating figure 5.
+13. `crejm_network.xlsx` - stores the player specific random effect covariance matrix that is an input to `ccrejm_randomeffect_network.R` for generating [figure 5](https://github.com/trambakbanerjee/crejm-code#figure-5).
 
 # Reproducibility workflow
 All figures and tables in the paper are reproducible except for figures 1 and 3, and table 3. These two figures are developed in Power Point and do not require any numerical inputs. Table 3 is the data dictionary. [Below](https://github.com/trambakbanerjee/crejm-code/blob/main/README.md#workflow), we provide the steps that must be followed to reproduce the different tables and figures in the paper.
