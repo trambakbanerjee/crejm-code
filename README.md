@@ -6,7 +6,7 @@ We provide the full set of analyses code in this GitHub repository that can be u
 There are 3 folders in this repository:
 
 1. data - holds the data files that were used for all the analyses in this paper. See the [README file](https://github.com/trambakbanerjee/crejm-code/tree/main/data#data) inside this folder for more information.
-2. spcov - . 
+2. spcov - this folder has the R functions from the package `spcov` (Bien, J., and Tibshirani, R. (2011)). 
 3. library - holds the main R functions. Please see the [README file](https://github.com/trambakbanerjee/crejm-code/tree/main/library#description) inside this folder for more information. 
 
 Other than these 3 folders, there are xx scripts in this repository. We describe them below:
@@ -58,3 +58,7 @@ and Purchase Propensity. The following steps when executed in the order describe
 ### Figures 7 and 8
 
 `[ERT ~ 48 hours]`
+
+# References
+
+1. Bien, J., and Tibshirani, R. (2011), "Sparse Estimation of a Covariance Matrix," Biometrika. 98(4). 807–820
