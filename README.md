@@ -9,7 +9,7 @@ There are 3 folders in this repository:
 2. spcov - this folder has the R functions from the package `spcov` (Bien, J., and Tibshirani, R. (2011)). 
 3. library - holds the main R functions. Please see the [README file](https://github.com/trambakbanerjee/crejm-code/tree/main/library#description) inside this folder for more information. 
 
-Other than these 3 folders, there are xx scripts in this repository. We describe them below:
+Other than these 3 folders, there are 8 scripts in this repository. We describe them below:
 
 1. `dataprocessing.R` - use this script to read the raw data files and output `out.RData` which is a list that holds the processed training and prediction data. 
 
@@ -73,8 +73,16 @@ Table 2 presents results related to the predictive performance of CREJM and Benc
  This script uses R packages `foreach` and `doParallel` and expects access to a local cluster of size 10 on line 83. `[ERT < 30 minutes]`    
 
 ### Figures 7 and 8
+Figure 7 presents three heat-maps, one for each of the three responses, that plot the mean predicted correlation over time of all players that are members of guild k where k = 1,..,50. Please be advised that reproducing figure 7 is both memory and time intensive.
 
-`[ERT ~ 48 hours]`
+1. Run `crejm_guildcorrelations.R` to reproduce figures 7 and 8. Please make sure that:
+    1. On lines 8 and 9 - the working directory and the path to `selection.RData` (from step 3 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) are properly set.
+    2. On lines 11 and 12 - the appropriate directory for sourcing the R scripts in the folder `library` is set.
+    3. On line 22 - the appropriate directory for reading `postselection.est.RData` (from step 4 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) is set.
+    4. On line 25 - the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) is properly set. 
+
+This script uses R packages `foreach` and `doParallel` and expects access to a local cluster of size 20 on lines 87 and 155. `[ERT ~ 48 hours]`   
+
 
 # References
 
