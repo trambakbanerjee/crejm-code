@@ -60,7 +60,11 @@ and Purchase Propensity. The following steps when executed in the order describe
 Please be advised that steps 2, 3 and 4 in the sequence above are both memory and time intensive processes.
   
 ### Figure 5
-1. Figure 5 relies on the output `postselection.est.RData` that is obtained from step (4) above. To reproduce figure 5, run `crejm_randomeffect_network.R` available inside the folder `selection`. `[ERT < 5 minutes]`
+1. Figure 5 relies on the output `postselection.est.RData` that is obtained from step (4) above. To reproduce figure 5, run `crejm_randomeffect_network.R`. 
+Please make sure that:
+    1. On line 7 - the working directory is set.
+    2. On line 8 - the path to `postselection.est.RData` (from step 4 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) is properly set.
+    3. On line 38 - the path to the excel file `crejm_network.xlsx` is set.`[ERT < 5 minutes]`  
 
 ### Table 2
 Table 2 presents results related to the predictive performance of CREJM and Benchmarks I, II. The following steps when executed in the order described below reproduce table 2.
