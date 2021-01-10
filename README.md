@@ -1,5 +1,5 @@
 # Code
-We provide the full set of analyses code in this GitHub repository that can be used to replicate all the results in the main paper. Specific instructions are provided in the Reproducibility workflow below on how to replicate the tables and figures in the main paper. Additionally, the code rely on specific software and hardware requirements that have been described below in detail. 
+We provide the full set of analyses code in this GitHub repository that can be used to replicate all the results in the main paper. Specific instructions are provided in the [Reproducibility workflow](https://github.com/trambakbanerjee/crejm-code#reproducibility-workflow) below on how to replicate the tables and figures in the main paper. Additionally, the code rely on specific software and hardware requirements that have been described below in detail. 
 
 ## Description
 
