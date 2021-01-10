@@ -55,8 +55,8 @@ Table 2 presents results related to the predictive performance of CREJM and Benc
 1. Run `glmmlasso_prediction.R` to output the False Positive (FP) rates, False Negative (FN) rates and Prediction Errors (PE) for Benchmark I.  Please make sure that the working directory and the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) are properly set in lines 5 and 8, respectively, of this script. `[ERT < 20 minutes]`
 2. Run `rpql_prediction.R` to output the False Positive (FP) rates, False Negative (FN) rates and Prediction Errors (PE) for Benchmark II.  Please make sure that the working directory and the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) are properly set in lines 5 and 8, respectively, of this script. Also, please set the appropriate directory in line 83 for sourcing the R scripts in the folder `library`. `[ERT < 30 minutes]`
 3. Run `crejm_prediction.R` to output the False Positive (FP) rates, False Negative (FN) rates and Prediction Errors (PE) for CREJM.  Please make sure that
-    3.1. the working directory and the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) are properly set in lines 5 and 8,
-    3.2. respectively, of this script. Also, please set the appropriate directory in line 83 for sourcing the R scripts in the folder `library`. `[ERT < 30 minutes]`
+    a. the working directory and the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) are properly set in lines 5 and 8,
+    b. respectively, of this script. Also, please set the appropriate directory in line 83 for sourcing the R scripts in the folder `library`. `[ERT < 30 minutes]`
 
 ### Figure 6
 
