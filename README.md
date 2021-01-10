@@ -40,9 +40,22 @@ This is the table that presents the selected fixed / composite effects and the c
 and Purchase Propensity. The following steps when executed in the order described below reproduce table 1.
 
 1. Run `dataprocessing.R` to output `out.RData` which is a list that holds the processed training and prediction data. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data` and the output directory is set in line 207. `[ERT < 10 minutes]`
-2. Run `crejm_estimation.R` available inside the folder `selection`. This script writes out a list of initial estimates `init.est.RData`. `[ERT ~ 6 hours]`
-3. Run `crejm_selection.R` available inside the folder `selection`. This script writes out a list of selected fixed / composite effect predictors in `selection.RData`. `[ERT ~ 4 hours]`
-4. To get the coefficient estimates, run `crejm_postselectionestimation.R` available inside the folder `selection`. This script writes out a list `postselection.est.RData` that stores the coefficient estimates, and the estimated covariance matrices of the player and guild specific random effects. `[ERT ~ 6 hours]`  
+2. Run `crejm_estimation.R`. This script writes out a list of initial estimates `init.est.RData`. Please make sure that:
+    1. On line 8 - the directory for sourcing the R scripts in the folder `spcov` is set.
+    2. On line 11 - the appropriate directory for sourcing the R scripts in the folder `library` is set.
+    3. On line 14 - the working directory is set.
+    4. On line 16 - the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) is properly set. `[ERT ~ 6 hours]`
+3. Run `crejm_selection.R`. This script writes out a list of selected fixed / composite effect predictors in `selection.RData`. Please make sure that:
+    1. On line 6 - the directory for sourcing the R scripts in the folder `spcov` is set.
+    2. On line 9 - the appropriate directory for sourcing the R scripts in the folder `library` is set.
+    3. On line 12 - the working directory is set.
+    4. On line 14 - the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) is properly set. 
+    5. On line 33 - the path to `init.est.RData` (from step 2 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) is properly set.`[ERT ~ 4 hours]`
+4. Finally, to get the coefficient estimates, run `crejm_postselectionestimation.R`. This script writes out a list `postselection.est.RData` that stores the coefficient estimates, and the estimated covariance matrices of the player and guild specific random effects. Please make sure that:
+    1. On line 9 - the path to `selection.RData` (from step 3 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) is properly set.
+    2. On line 13 - the directory for sourcing the R scripts in the folder `spcov` is set.
+    3. On line 16 - the appropriate directory for sourcing the R scripts in the folder `library` is set.
+    4. On line 19 - the working directory is set.`[ERT ~ 6 hours]`  
 
 Please be advised that steps 2, 3 and 4 in the sequence above are both memory and time intensive processes.
   
