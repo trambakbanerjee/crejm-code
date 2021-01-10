@@ -9,13 +9,20 @@ There are 3 folders in this repository:
 2. spcov - this folder has the R functions from the package `spcov` (Bien, J., and Tibshirani, R. (2011)). 
 3. library - holds the main R functions. Please see the [README file](https://github.com/trambakbanerjee/crejm-code/tree/main/library#description) inside this folder for more information. 
 
-Other than these 3 folders, there are 8 scripts in this repository. We describe them below:
+Other than these 3 folders, there are 12 scripts in this repository. We describe them below:
 
 1. `dataprocessing.R` - use this script to read the raw data files and output `out.RData` which is a list that holds the processed training and prediction data. 
-
 2. `datasummary.R` - use this script to reproduce table 4 in the main paper. The script writes out two `CSV` files that hold the summary statistics in table 4. 
-
-3. `motivatingfigures.R` - use this script to reproduce figures 2 and 4 in the main paper. 
+3. `motivatingfigures.R` - use this script to reproduce figures 2 and 4 in the main paper.
+4. `crejm_estimation.R` - this script writes out a list of initial estimates `init.est.RData` that is an input for generating table 1. 
+5. `crejm_selection.R` - this script uses `init.est.RData` and writes out a list of selected fixed / composite effect predictors in `selection.RData` for table 1.  
+6. `crejm_postselectionestimation.R` - this script uses `selection.RData` and writes out a list `postselection.est.RData` that stores the coefficient estimates, and the estimated covariance matrices of the player and guild specific random effects. 
+7. `ccrejm_randomeffect_network.R` - use this script to reproduce figure 5. 
+8. `datasummary.R` - use this script to reproduce table 4 in the main paper. The script writes out two `CSV` files that hold the summary statistics in table 4. 
+9. `motivatingfigures.R` - use this script to reproduce figures 2 and 4 in the main paper.
+10. `dataprocessing.R` - use this script to read the raw data files and output `out.RData` which is a list that holds the processed training and prediction data. 
+11. `datasummary.R` - use this script to reproduce table 4 in the main paper. The script writes out two `CSV` files that hold the summary statistics in table 4. 
+12. `motivatingfigures.R` - use this script to reproduce figures 2 and 4 in the main paper. 
 
 # Reproducibility workflow
 All figures and tables in the paper are reproducible except for figures 1 and 3, and table 3. These two figures are developed in Power Point and do not require any numerical inputs. Table 3 is the data dictionary. [Below](https://github.com/trambakbanerjee/crejm-code/blob/main/README.md#workflow), we provide the steps that must be followed to reproduce the different tables and figures in the paper.
