@@ -39,7 +39,7 @@ We provide a sequence steps for reproducing the different tables and figures in 
 This is the table that presents the selected fixed / composite effects and the coefficient estimates under the submodels Login Indicator, Duration of Play
 and Purchase Propensity. The following steps when executed in the order described below reproduce table 1.
 
-1. Run `dataprocessing.R` to output `out.RData` which is a list that holds the processed training and prediction data. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data`. `[ERT < 10 minutes]`
+1. Run `dataprocessing.R` to output `out.RData` which is a list that holds the processed training and prediction data. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data` and the output directory is set in line 207. `[ERT < 10 minutes]`
 2. Run `crejm_estimation.R` available inside the folder `selection`. This script writes out a list of initial estimates `init.est.RData`. `[ERT ~ 6 hours]`
 3. Run `crejm_selection.R` available inside the folder `selection`. This script writes out a list of selected fixed / composite effect predictors in `selection.RData`. `[ERT ~ 4 hours]`
 4. To get the coefficient estimates, run `crejm_postselectionestimation.R` available inside the folder `selection`. This script writes out a list `postselection.est.RData` that stores the coefficient estimates, and the estimated covariance matrices of the player and guild specific random effects. `[ERT ~ 6 hours]`  
