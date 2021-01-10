@@ -204,5 +204,5 @@ out<-list('g.train'=g1,'g.pred'=g2,
           'gm.train'=gm.train,'gm.pred'=gm.pred,
           'data.full'=data.full)
 
-save(out,file='out.RData')
+save(out,file='.../crejm-code/out.RData')
 
