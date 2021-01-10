@@ -12,17 +12,17 @@ There are 3 folders in this repository:
 Other than these 3 folders, there are 12 R scripts and an excel file in this repository. We describe them below:
 
 1. `dataprocessing.R` - use this script to read the raw data files and output `out.RData` which is a list that holds the processed training and prediction data. 
-2. `datasummary.R` - use this script to reproduce table 4 in the main paper. The script writes out two `CSV` files that hold the summary statistics in table 4. 
-3. `motivatingfigures.R` - use this script to reproduce figures 2 and 4 in the main paper.
-4. `crejm_estimation.R` - this script writes out a list of initial estimates `init.est.RData` that is an input for generating table 1. 
-5. `crejm_selection.R` - this script uses `init.est.RData` and writes out a list of selected fixed / composite effect predictors in `selection.RData` for table 1.  
+2. `datasummary.R` - use this script to reproduce [table 4](https://github.com/trambakbanerjee/crejm-code#table-4) in the main paper. The script writes out two `CSV` files that hold the summary statistics in table 4. 
+3. `motivatingfigures.R` - use this script to reproduce [figures 2 and 4](https://github.com/trambakbanerjee/crejm-code#figures-2-and-4) in the main paper.
+4. `crejm_estimation.R` - this script writes out a list of initial estimates `init.est.RData` that is an input for generating [table 1](https://github.com/trambakbanerjee/crejm-code#table-1). 
+5. `crejm_selection.R` - this script uses `init.est.RData` and writes out a list of selected fixed / composite effect predictors in `selection.RData` for [table 1](https://github.com/trambakbanerjee/crejm-code#table-1).  
 6. `crejm_postselectionestimation.R` - this script uses `selection.RData` and writes out a list `postselection.est.RData` that stores the coefficient estimates, and the estimated covariance matrices of the player and guild specific random effects. 
-7. `ccrejm_randomeffect_network.R` - use this script to reproduce figure 5. 
-8. `glmmlasso_prediction.R` - use this script to reproduce table 2 for Benchmark I. 
-9. `rpql_prediction.R` - reproduces table 2 for Benchmark II. 
-10. `crejm_prediction.R` - reproduces table 2 for CREJM. 
-11. `crejm_guildrandeffs.R` - use this script to reproduce figure 6.
-12. `crejm_guildcorrelations.R` - reproduces figures 7 and 8 in the main paper. 
+7. `ccrejm_randomeffect_network.R` - use this script to reproduce [figure 5](https://github.com/trambakbanerjee/crejm-code#figure-5). 
+8. `glmmlasso_prediction.R` - use this script to reproduce [table 2](https://github.com/trambakbanerjee/crejm-code#table-2) for Benchmark I. 
+9. `rpql_prediction.R` - reproduces [table 2](https://github.com/trambakbanerjee/crejm-code#table-2) for Benchmark II. 
+10. `crejm_prediction.R` - reproduces [table 2](https://github.com/trambakbanerjee/crejm-code#table-2) for CREJM. 
+11. `crejm_guildrandeffs.R` - use this script to reproduce [figure 6](https://github.com/trambakbanerjee/crejm-code#figure-6).
+12. `crejm_guildcorrelations.R` - reproduces [figures 7 and 8](https://github.com/trambakbanerjee/crejm-code#figures-7-and-8) in the main paper. 
 13. `crejm_network.xlsx` - stores the player specific random effect covariance matrix that is an input to `ccrejm_randomeffect_network.R` for generating [figure 5](https://github.com/trambakbanerjee/crejm-code#figure-5).
 
 # Reproducibility workflow
