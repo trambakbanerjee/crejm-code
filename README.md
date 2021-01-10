@@ -55,8 +55,10 @@ Table 2 presents results related to the predictive performance of CREJM and Benc
 1. Run `glmmlasso_prediction.R` to output the False Positive (FP) rates, False Negative (FN) rates and Prediction Errors (PE) for Benchmark I.  Please make sure that the working directory and the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) are properly set in lines 5 and 8, respectively, of this script. `[ERT < 20 minutes]`
 2. Run `rpql_prediction.R` to output the False Positive (FP) rates, False Negative (FN) rates and Prediction Errors (PE) for Benchmark II.  Please make sure that the working directory and the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) are properly set in lines 5 and 8, respectively, of this script. Also, please set the appropriate directory in line 83 for sourcing the R scripts in the folder `library`. `[ERT < 30 minutes]`
 3. Run `crejm_prediction.R` to output the False Positive (FP) rates, False Negative (FN) rates and Prediction Errors (PE) for CREJM.  Please make sure that
-    a. the working directory and the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) are properly set in lines 5 and 8,
-    b. respectively, of this script. Also, please set the appropriate directory in line 83 for sourcing the R scripts in the folder `library`. `[ERT < 30 minutes]`
+    1. On lines 8 and 9 - the working directory and the path to `selection.RData` (from step 3 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) are properly set.
+    2. On lines 11 and 12 - the appropriate directory for sourcing the R scripts in the folder `library` is set.
+    3. On line 22 - the appropriate directory for reading `postselection.est.RData` (from step 4 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) is set.
+    4. On line 25 - the path to `out.RData` (from step 1 of [Table 1](https://github.com/trambakbanerjee/crejm-code#table-1)) is properly set. `[ERT < 30 minutes]`
 
 ### Figure 6
 
