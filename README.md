@@ -52,7 +52,8 @@ Please be advised that steps 2, 3 and 4 in the sequence above are both memory an
 ### Table 2
 Table 2 presents results related to the predictive performance of CREJM and Benchmarks I, II. The following steps when executed in the order described below reproduce table 2.
 
-1. 
+1. Run `glmmlasso_prediction.R` to output the False Positive (FP) rates, False Negative (FN) rates and Prediction Errors (PE) for Benhcmark I.  Please make sure that the working directory and the path to `out.RData` (from step 1 of Table 1) is properly set on lines 5 and 8 of this script. `[ERT < 20 minutes]`
+2. 
 `[ERT < 1 hour]`
 
 ### Figure 6
