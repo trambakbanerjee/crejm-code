@@ -30,25 +30,29 @@ The analyses presented in the paper are based on the following Hardware specific
 We provide a sequence steps for reproducing the different tables and figures in the paper. Expected Run Time for each of these steps will be denoted by ERT.
 
 ### Figures 2 and 4
-1. Run the script `motivatingfigures.R` inside the folder `processing` to reproduce figures 2 and 4 in the main paper. Please make sure that the `R` working directory is set to `(your folder structure)/crejm-code/data`. `[ERT < 10 minutes]`
+1. Run the script `motivatingfigures.R` to reproduce figures 2 and 4 in the main paper. Please make sure that the `R` working directory is set to `(your folder structure)/crejm-code/data`. `[ERT < 5 minutes]`
 
 ### Table 4
-1. Run the script `datasummary.R` inside the folder `processing` to reproduce table 4 in the main paper. The script writes out two CSV files that hold the summary statistics in table 4. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data`. `[ERT < 10 minutes]`
+1. Run the script `datasummary.R` to reproduce table 4 in the main paper. The script writes out two CSV files that hold the summary statistics in table 4. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data`. `[ERT < 5 minutes]`
 
 ### Table 1
 This is the table that presents the selected fixed / composite effects and the coefficient estimates under the submodels Login Indicator, Duration of Play
 and Purchase Propensity. The following steps when executed in the order described below reproduce table 1.
 
-1. Run `dataprocessing.R` inside the folder `processing` to output `out.RData` which is a list that holds the processed training and prediction data. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data`. `[ERT < 10 minutes]`
+1. Run `dataprocessing.R` to output `out.RData` which is a list that holds the processed training and prediction data. Before running this script, please make sure that the working directory is set to `<your folder structure>/crejm-code/data`. `[ERT < 10 minutes]`
 2. Run `crejm_estimation.R` available inside the folder `selection`. This script writes out a list of initial estimates `init.est.RData`. `[ERT ~ 6 hours]`
 3. Run `crejm_selection.R` available inside the folder `selection`. This script writes out a list of selected fixed / composite effect predictors in `selection.RData`. `[ERT ~ 4 hours]`
 4. To get the coefficient estimates, run `crejm_postselectionestimation.R` available inside the folder `selection`. This script writes out a list `postselection.est.RData` that stores the coefficient estimates, and the estimated covariance matrices of the player and guild specific random effects. `[ERT ~ 6 hours]`  
+
+Please be advised that steps 2, 3 and 4 in the sequence above are both memory and time intensive processes.
   
 ### Figure 5
 1. Figure 5 relies on the output `postselection.est.RData` that is obtained from step (4) above. To reproduce figure 5, run `crejm_randomeffect_network.R` available inside the folder `selection`. `[ERT < 5 minutes]`
 
 ### Table 2
+Table 2 presents results related to the predictive performance of CREJM and Benchmarks I, II. The following steps when executed in the order described below reproduce table 2.
 
+1. 
 `[ERT < 1 hour]`
 
 ### Figure 6
